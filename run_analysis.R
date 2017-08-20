@@ -96,7 +96,7 @@ average_data = group_by(mean_and_std_data, activity, subject)
 average_data = summarize_each(average_data, funs(mean))
 
 print("Writing result tidy date to file")
-write.table(average_data, "final_result.dat",row.names=FALSE)
+write.table(average_data, "tidy.txt", row.names=FALSE)
 
 
 
